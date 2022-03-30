@@ -1,0 +1,488 @@
+{
+  "id": "bb33d0b3-5490-4454-834a-f72937007019",
+  "version": "2.0",
+  "name": "cnsa-selenium",
+  "url": "http://localhost:1337/login",
+  "tests": [{
+    "id": "35c6257f-59da-41ee-a1f8-6a2d0ed72ef7",
+    "name": "RegisterOKTest",
+    "commands": [{
+      "id": "bcde0fde-0ad5-4a96-ad5a-53e5f7554c53",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1337/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb13adcd-edef-40a8-9f92-b91e020caa10",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x741",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f8b5e1b-e03b-4ce1-bc8e-60f29d8c7650",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.logo",
+      "targets": [
+        ["css=.logo", "css:finder"],
+        ["xpath=//img[@alt='CNSA-SELENIUM logo']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07cf2273-1f39-4136-b93b-578544c60e43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo",
+      "targets": [
+        ["css=.logo", "css:finder"],
+        ["xpath=//img[@alt='CNSA-SELENIUM logo']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "704320b7-7117-4a4d-b001-f886ae3574ca",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.position-absolute:nth-child(4)",
+      "targets": [
+        ["css=.position-absolute:nth-child(4)", "css:finder"],
+        ["xpath=//img[@alt='A ship hovering a few feet over the surface of the water, bearing a flagpole with the Sails.js logo']", "xpath:img"],
+        ["xpath=//div[@id='homepage']/div/div/div/img[4]", "xpath:idRelative"],
+        ["xpath=//img[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b2f8d0d-107d-469c-8313-db723ea1727d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-4 > strong",
+      "targets": [
+        ["css=.display-4 > strong", "css:finder"],
+        ["xpath=//div[@id='homepage']/div/div/h1/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Sails')]", "xpath:innerText"]
+      ],
+      "value": "Sails"
+    }, {
+      "id": "38cd58e5-3a30-4166-af36-53cb52296c72",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/signup')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c6d69f0-05d3-48eb-befe-d60e9b4789d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/signup')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0de54cc9-6f2b-4690-add7-ac950ca428bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.container-fluid > .text-center",
+      "targets": [
+        ["css=.container-fluid > .text-center", "css:finder"],
+        ["xpath=//div[@id='signup']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Create an account')]", "xpath:innerText"]
+      ],
+      "value": "Create an account"
+    }, {
+      "id": "d51646e0-7818-4d4c-aa9f-4cc3ee7e901f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mx-auto > .text-center:nth-child(1)",
+      "targets": [
+        ["css=.mx-auto > .text-center:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='signup']/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Let's get started! Becoming a member is free and only takes a few minutes."
+    }, {
+      "id": "add53544-9537-4263-a7fb-d70f3c8a22f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(1) > label",
+      "targets": [
+        ["css=.form-group:nth-child(1) > label", "css:finder"],
+        ["xpath=//div[@id='signup']/div/div/form/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Full name')]", "xpath:innerText"]
+      ],
+      "value": "Full name"
+    }, {
+      "id": "1dff2e89-1f9c-4214-be39-44572cb8741d",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf715c42-42e7-47cf-ac48-80c0ebba558c",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "usuariorandom"
+    }, {
+      "id": "ba5d941a-ed11-4fef-a3d3-034c97e08396",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-address",
+      "targets": [
+        ["id=email-address", "id"],
+        ["css=#email-address", "css:finder"],
+        ["xpath=//input[@id='email-address']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad8b08c5-a7b9-4fa0-a949-c958faeed74f",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=email-address",
+      "targets": [
+        ["id=email-address", "id"],
+        ["css=#email-address", "css:finder"],
+        ["xpath=//input[@id='email-address']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43858f5b-e280-47b7-b575-5c3b4acb106b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"ual-\" + Math.floor(Math.random()*1500000)+\"@ual.es\"",
+      "targets": [],
+      "value": "randomuser"
+    }, {
+      "id": "9cdafb58-268d-4e20-ae8d-f4e935373eff",
+      "comment": "",
+      "command": "echo",
+      "target": "${randomuser}",
+      "targets": [],
+      "value": "return \"ual-\" + Math.floor(Math.random()*1500000)+\"@ual.es\""
+    }, {
+      "id": "370eb261-9a5b-41c0-9d2f-2f0bdc8490bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-address",
+      "targets": [],
+      "value": "${randomuser}"
+    }, {
+      "id": "02d14b87-ce3e-4fc0-aa6b-04e6455f4995",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "937aecc1-1df1-42fa-b43f-bbef8787f039",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81fd5899-ef0d-493d-8541-56b24691d48c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "28a1b287-fb47-4261-83ce-69d8238535c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm-password",
+      "targets": [
+        ["id=confirm-password", "id"],
+        ["css=#confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c660dc-914c-4334-967e-583ed90fa61c",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=confirm-password",
+      "targets": [
+        ["id=confirm-password", "id"],
+        ["css=#confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5ec073d-1afd-4269-a11a-029a5f631270",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirm-password",
+      "targets": [
+        ["id=confirm-password", "id"],
+        ["css=#confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "65c37f83-9b28-4a68-a464-3a2f03cd2843",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-check-label",
+      "targets": [
+        ["css=.form-check-label", "css:finder"],
+        ["xpath=//div[@id='signup']/div/div/form/div[5]/label", "xpath:idRelative"],
+        ["xpath=//div[5]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'I have read & agree to the terms of service.')]", "xpath:innerText"]
+      ],
+      "value": "I have read & agree to the terms of service."
+    }, {
+      "id": "f7912c45-4fbf-44ef-9d4c-f4add8b33c86",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "id=terms-agreement",
+      "targets": [
+        ["id=terms-agreement", "id"],
+        ["css=#terms-agreement", "css:finder"],
+        ["xpath=//input[@id='terms-agreement']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a23ce1cd-f34c-42d8-9408-68d962ac9656",
+      "comment": "",
+      "command": "click",
+      "target": "id=terms-agreement",
+      "targets": [
+        ["id=terms-agreement", "id"],
+        ["css=#terms-agreement", "css:finder"],
+        ["xpath=//input[@id='terms-agreement']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb17d288-fb00-41ec-a5b4-27985d48b01a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.ajax-button",
+      "targets": [
+        ["css=.ajax-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93e72df2-7879-40e1-bb75-76e729e63593",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ajax-button",
+      "targets": [
+        ["css=.ajax-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create account')]", "xpath:innerText"]
+      ],
+      "value": "Create account"
+    }, {
+      "id": "077d95f7-d38a-4e7a-8605-af8e0df8c4ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(4)",
+      "targets": [
+        ["css=.text-center:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='signup']/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Have an account? Sign in')]", "xpath:innerText"]
+      ],
+      "value": "Have an account? Sign in"
+    }, {
+      "id": "ca96d462-b398-4515-8ae7-6df167de7bb5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.text-center > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//div[@id='signup']/div/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/login')])[2]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94233246-1780-4bee-9a72-d2f46d04ba35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax-button",
+      "targets": [
+        ["css=.ajax-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "367fd004-bf2c-4092-8485-83bd0e18d852",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax-form",
+      "targets": [
+        ["css=.ajax-form", "css:finder"],
+        ["xpath=//div[@id='signup']/div/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "119fadbf-d055-45ad-8167-058fc5757c25",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Account Settings",
+      "targets": [
+        ["linkText=Account Settings", "linkText"],
+        ["css=.nav-link:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Settings')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/account')])[2]", "xpath:href"],
+        ["xpath=//header/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f84e455c-aae9-4ac8-ae56-5a5c0a823a47",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='welcome']/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome!')]", "xpath:innerText"]
+      ],
+      "value": "Welcome!"
+    }, {
+      "id": "a3a93df1-bc89-4e5a-9882-aed6d3d07d18",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Update my email",
+      "targets": [
+        ["linkText=Update my email", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Update my email')]", "xpath:link"],
+        ["xpath=//div[@id='welcome']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/account/profile')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Update my email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b8cdb86-6a96-4d0e-99bb-338a88c0f8d2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-outline-info",
+      "targets": [
+        ["css=.btn-outline-info", "css:finder"],
+        ["xpath=//div[@id='welcome']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Open a modal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c1fa0b9-5898-426a-b17b-30a523392086",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out",
+      "targets": [
+        ["linkText=Sign out", "linkText"],
+        ["css=.nav-link:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign out')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/logout')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ae37f7f-dcc1-4d8d-b217-c343817a5425",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center:nth-child(1)",
+      "targets": [
+        ["css=.text-center:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='login']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Sign in to your account')]", "xpath:innerText"]
+      ],
+      "value": "Sign in to your account"
+    }]
+  }],
+  "suites": [{
+    "id": "167f27dd-3f62-4c46-bdae-c9af43f1772d",
+    "name": "Register Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["35c6257f-59da-41ee-a1f8-6a2d0ed72ef7"]
+  }],
+  "urls": ["http://localhost:1337/login"],
+  "plugins": []
+}
