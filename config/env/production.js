@@ -251,7 +251,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     onlyAllowOrigins: [
-      'https://damp-tor-38829.herokuapp.com/',
+      'https://damp-tor-38829.herokuapp.com',
     ],
 
 
@@ -373,7 +373,7 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://damp-tor-38829.herokuapp.com/',
+    baseUrl: 'https://damp-tor-38829.herokuapp.com',
     internalEmailAddress: 'support@example.com',
 
     // sendgridSecret: 'SG.fake.3e0Bn0qSQVnwb1E4qNPz9JZP5vLZYqjh7sn8S93oSHU',
