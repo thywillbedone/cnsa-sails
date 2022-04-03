@@ -147,11 +147,11 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    cors: {
-      allowOrigins: [
-        'https://damp-tor-38829.herokuapp.com/',
-      ]
-    },
+    // cors: {
+    //   allowOrigins: [
+    //     'https://damp-tor-38829.herokuapp.com/',
+    //   ]
+    // },
 
   },
 
