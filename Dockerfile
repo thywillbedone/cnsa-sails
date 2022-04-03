@@ -12,10 +12,8 @@ RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
 
-RUN npm audit fix --force
-
 # Bundle app source
 COPY . .
 
-EXPOSE 3000
-CMD [ "npm", "start" ]
+EXPOSE 1337
+RUN [ "npm", "start" ]
