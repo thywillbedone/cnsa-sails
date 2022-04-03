@@ -20,7 +20,7 @@ pipeline {
       }
     }
      
-    stage('Run app') {
+    stage('Run app port') {
       steps {
          sh 'sails lift'
       }
