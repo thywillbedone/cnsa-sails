@@ -148,9 +148,9 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+      allowOrigins: [
+        'https://damp-tor-38829.herokuapp.com/',
+      ]
     },
 
   },
@@ -250,9 +250,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    //onlyAllowOrigins: [
-      // 'https://localhost',
-    //],
+    onlyAllowOrigins: [
+      'https://damp-tor-38829.herokuapp.com/',
+    ],
 
 
     /***************************************************************************
@@ -373,7 +373,7 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
+    baseUrl: 'https://damp-tor-38829.herokuapp.com/',
     internalEmailAddress: 'support@example.com',
 
     // sendgridSecret: 'SG.fake.3e0Bn0qSQVnwb1E4qNPz9JZP5vLZYqjh7sn8S93oSHU',
